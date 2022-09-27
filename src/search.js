@@ -13,9 +13,9 @@ function Search(props){
         setSearchVal('')
     }
 
-    // const filteredProducts = props.names.filter((name)=>{
-    //         return name.includes(search)
-    // })
+    const filteredProducts = props.name.filter((name)=>{
+           console.log(name)
+    })
 
     return (
         <>
