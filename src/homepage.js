@@ -6,6 +6,7 @@ import Pagination from './pagination';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import Search from './search';
+import AddName from './addName'
 import Form from 'react-bootstrap/Form'
 import { FormGroup } from 'react-bootstrap';
 
@@ -70,7 +71,7 @@ const paginate = (pageNumbers) => setCurrentPage(pageNumbers)
                 </Col>
                 <Col  className='add'>
                     ADD A NAME
-                    
+                    <AddName/>
                 </Col>
                
             </Row>
