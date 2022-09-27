@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 function Navigation() {
     return (
-        <Navbar expand="lg" variant="light" bg="light">
+        <Navbar expand="lg" variant="light" bg="dark">
         <Container fluid>
           <Navbar.Brand id='logo' href="#">NameIt</Navbar.Brand>
         </Container>
