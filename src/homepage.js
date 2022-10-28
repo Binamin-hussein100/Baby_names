@@ -32,9 +32,13 @@ const paginate = (pageNumbers) => setCurrentPage(pageNumbers)
 
     return (
       <Container fluid className="homepage">
-            <Row>
-              <Col>
+            <Row className='searching'>
+              <Col lg="2">
+              </Col>
+              <Col lg="8">
                   <Search name={names}/>
+              </Col>
+              <Col lg="2">
               </Col>
             </Row>
             <Row>
