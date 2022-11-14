@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <Navbar expand="lg" variant="light" bg="light">
         <Container fluid>
-          <Navbar.Brand id='logo' href="#">NameIt</Navbar.Brand>
+          <Navbar.Brand id='logo' href="#">N..It</Navbar.Brand>
         </Container>
         <Container>
             <Nav.Link to='/landing'>Home</Nav.Link>
