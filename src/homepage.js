@@ -84,3 +84,4 @@ const paginate = (pageNumbers) => setCurrentPage(pageNumbers)
 }
 
 export default Homepage;
+
