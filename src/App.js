@@ -11,7 +11,8 @@ function App() {
   return (
     <Container fluid className='application'>
         <Navigation/>
-        <LandingPage/>
+        <Homepage/>
+        {/* <LandingPage/> */}
           {/* <Routes>
               <Route path='/' exact element={<Homepage/>}/>  
               <Route path='/landing' element={}/> 
