@@ -14,6 +14,7 @@ function Homepage(){
   const [names, setNames] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage, setPostsPerPage] = useState(10)
+  
   // State for collaps
   const [open, setOpen] = useState(false)
   
@@ -22,6 +23,16 @@ function Homepage(){
     .then((res) =>res.json())
     .then((data) =>setNames(data))
   },[])
+
+  fetch(`http://localhost:9292/baby_names/${id}`,{
+    method:"PATCH",
+    headers:{
+      "Content-Type":"Application/json"
+    },
+    body:{
+
+    }
+  })
 
   // Get the current page
 const indexOfLastPost = currentPage * postsPerPage
