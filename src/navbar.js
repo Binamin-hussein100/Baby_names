@@ -1,22 +1,50 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav'
 
 function Navigation() {
     return (
-        <Navbar expand="lg" variant="light" bg="light">
-        <Container fluid>
-          <Navbar.Brand id='logo' href="#">N..It</Navbar.Brand>
-        </Container>
-        <Container>
-            <Nav.Link to='/landing'>Home</Nav.Link>
-        </Container>
-      </Navbar>
+     <>
+       <nav className='navbar'>
+          
+          <div class="navbar-container container">
+            <input type="checkbox" name="" id=""/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li>
+                <Link to="/names">
+                    Names
+                </Link>
+                </li>
+                <li>
+                <Link to="/names">
+                    About
+                </Link>
+                </li>
+                
+            </ul>
+            <Link to="/">
+                <div>
+                  <h3>Name<span>It</span></h3>
+                </div>
+            </Link>
+          </div>
+      </nav>
+     </>
 
     )
 
 }
 
 export default Navigation;
+// /* 
+//           </div>
+//           <div>
+            
+//             <Link>
+//                 About
+// //             </Link>
+          
