@@ -49,19 +49,19 @@ const LandingPage = () =>{
                     <a href="#">Contact</a>
                 </p>
 
-                <p class="footer-company-name">Company Name © 2015</p>
+                <p class="footer-company-name">NameIt © 2022</p>
             </div>
 
             <div class="footer-center">
 
                 <div>
                     <i class="fa fa-map-marker"></i>
-                    <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+                    <p><span>444 S. TM Ave</span> Nairobi, Kenya</p>
                 </div>
 
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p>+1.555.555.5555</p>
+                    <p>+254712345678</p>
                 </div>
 
                 <div>
