@@ -4,19 +4,21 @@ import Navigation from './navbar';
 import LandingPage from './landingPage'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import {Routes, Route} from "react-router-dom"
+import {BrowserRouter as Router,Routes, Route} from "react-router-dom"
 
 
 function App() {
   return (
     <Container fluid className='application'>
-        <Navigation/>
-        <Homepage/>
-        {/* <LandingPage/> */}
-          {/* <Routes>
-              <Route path='/' exact element={<Homepage/>}/>  
-              <Route path='/landing' element={}/> 
-          </Routes> */}
+        
+        <Router>
+          <Navigation/>
+          <Routes>
+          
+              <Route path='/' element={<LandingPage/>}/>
+              <Route path='/names' element={<Homepage/>}/>
+          </Routes>
+        </Router>
            
     </Container>
     
