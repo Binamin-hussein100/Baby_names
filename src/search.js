@@ -1,22 +1,11 @@
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
-import { FormGroup } from 'react-bootstrap';
+import FormGroup from 'react-bootstrap';
 
 function Search(props){
     const [search, setSearchVal] = useState('')
 
-    const handleInput = (e) =>{
-        setSearchVal(e.target.value)
-    }
-
-    const handleClearBtn = () =>{
-        setSearchVal('')
-    }
-
-    const filteredProducts = props.name.filter((name)=>{
-           console.log(name)
-    })
 
     return (
         <>
@@ -32,7 +21,15 @@ function Search(props){
                 <Button variant='outline-primary'>
                     Search
                 </Button>
-            </Form>            
+            </Form>  
+            <div>
+                <h1>Binamin</h1>
+                <ul>
+                    {filteredProducts.map(product=>{
+                        return <li key={product}>{product}kk</li>
+                    })}
+                </ul>
+            </div>          
         </>
     )
 
